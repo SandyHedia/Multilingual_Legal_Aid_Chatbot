@@ -171,6 +171,7 @@ def preprocess_multilingual_legal_data(input_dir, output_json):
 
 
 if __name__ == "__main__":
-    input_directory = "C:/sato/projects/Multilingual_Legal_Aid_Chatbot/data/fr&en_data"
+    input_directory = "Multilingual_Legal_Aid_Chatbot/data/fr&en_data"
     output_file = "processed_multilingual_legal_data.json"
     preprocess_multilingual_legal_data(input_directory, output_file)
+
