@@ -33,7 +33,7 @@ os.environ["HF_HUB_DOWNLOAD_TIMEOUT"] = "120"
 embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-m3", model_kwargs={"device": "cpu"})
 
 db = FAISS.load_local(
-    "Multilingual_Legal_Aid_Chatbot/models/faiss_index_bge_m3", embeddings,
+    "../models/faiss_index_bge_m3", embeddings,
     allow_dangerous_deserialization=True)
 vector_store = db.as_retriever(
     search_type="mmr",  # Maximum Marginal Relevance (MMR)
@@ -41,7 +41,7 @@ vector_store = db.as_retriever(
 )
 
 # Load the Qwen-1.5-7B-Chat model
-model_path = "Multilingual_Legal_Aid_Chatbot/models/Qwen1.5-7B-Chat"
+model_path = "../models/Qwen1.5-7B-Chat"
 
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(model_path, device_map="cpu", trust_remote_code=True)
@@ -141,4 +141,5 @@ interface.launch()
 
 # if __name__ == "__main__":
 #    app.run(debug=True, port=5000, use_reloader=False)
+
 
