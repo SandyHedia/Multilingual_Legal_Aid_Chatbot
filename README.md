@@ -99,7 +99,7 @@ This section showcases the chatbot's functionality with screenshots from the Gra
   - Image: ![English Query Demo](assets/output.jpg)  
 
 - **Screenshot 2: French Query**
-  - Description: Displays the interface with a query like "Expliquez l'Article 1 de la Déclaration des droits de l'homme" and the response with sources.
+  - Description: Displays the interface with a query and the response with sources.
   - Image: ![French Query Demo](assets/output2.jpg)  
 
 ## Notes
