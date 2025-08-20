@@ -90,6 +90,18 @@ Follow these steps to set up and run the project:
 - **Efficient Retrieval**: Uses MMR (Maximum Marginal Relevance) and reranking for relevant results.
 - **Interactive Interface**: Gradio-based chatbot for real-time interaction.
 
+## Demo
+This section showcases the chatbot's functionality with screenshots from the Gradio interface. Follow the setup instructions to replicate the demo locally.
+
+### Demo Screenshots
+- **Screenshot 1: English Query**
+  - Description: Shows the interface with a query like "What is the definition of county in U.S. law?" and the response with sources.
+  - Image: ![English Query Demo](assets/output.jpg)  
+
+- **Screenshot 2: French Query**
+  - Description: Displays the interface with a query like "Expliquez l'Article 1 de la Déclaration des droits de l'homme" and the response with sources.
+  - Image: ![French Query Demo](assets/output2.jpg)  
+
 ## Notes
 - **Path Configuration**: Hardcoded paths should be updated to relative paths or environment variables for portability (e.g., use `os.getenv("DATA_PATH", "data/fr&en_data")`).
 - **Model Performance**: Qwen-1.5-7B-Chat runs on CPU; GPU support requires additional configuration.
