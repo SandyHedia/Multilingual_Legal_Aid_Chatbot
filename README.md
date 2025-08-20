@@ -38,9 +38,9 @@ Follow these steps to set up and run the project:
      ```
 
 3. **Prepare Data and Models**:
-   - **U.S. Code Data**: Run `u.s_code_scraper.py` to generate `uscode_titles.json` in the `data/fr&en_data` directory (ensure the directory exists at `C:/sato/projects/Multilingual_Legal_Aid_Chatbot/data/fr&en_data` or update the path).
+   - **U.S. Code Data**: Run `u.s_code_scraper.py` to generate `uscode_titles.json` in the `data/fr&en_data` directory (ensure the directory exists at `Multilingual_Legal_Aid_Chatbot/data/fr&en_data` or update the path).
    - **French Legal Documents**: Place PDF or TXT files (e.g., French legal codes) in the `data/fr&en_data` directory.
-   - **Pre-trained Models**: Download Qwen-1.5-7B-Chat to `C:/sato/projects/NLP projects/Multilingual_Legal_Aid_Chatbot/models/Qwen1.5-7B-Chat` (update paths in `retrieval_chains.py` if different).
+   - **Pre-trained Models**: Download Qwen-1.5-7B-Chat to `Multilingual_Legal_Aid_Chatbot/models/Qwen1.5-7B-Chat` (update paths in `retrieval_chains.py` if different).
    - **FAISS Index**: The `embedding_vector_store_and_retrieval.py` script will generate `faiss_index_bge_m3`—ensure sufficient disk space.
 
 4. **Run the Scripts**:
